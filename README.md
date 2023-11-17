@@ -1,2 +1,5 @@
-# HTML5 e CSS3
- Git do Curso de HTML5 e CSS3 do Guanabara
+# _Esse é o README.md do Curso_
+Aqui vou listar e anotar as:
+1. Bibliografia
+1. Curiosidades
+1. Relatórios
