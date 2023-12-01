@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reprodução de áudio</h1>
+    <p>Reproduzindo áudio em HTML5</p>
+    <!-- <audio src="midia/happy-mistake.mp3" controls autoplay></audio> -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav"><!-- evite usar arquivo .wav, pois é muito pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio, <a href="midia/happy-mistake.mp3">clique aqui para baixá-lo.</a></p>
+    </audio>
+    <h1>Reproduzindo vídeos</h1>
+    <h2>Vídeos hospedados localmente</h2>
+    <p>Este vídeo será hospedado localmente.</p>
+    <!--<video src="midia-video/meu-video.mp4" width="500" controls></video>-->
+    <video width="500" poster="imagens-video/limoes-capa.png" controls>
+        <source src="midia-video/meu-video.mp4" type="video/mp4">
+        <source src="midia-video/meu-video.m4v" type="video/m4v">
+        <source src="midia-video/meu-video.webm" type="video/webm">
+        <source src="midia-video/meu-video.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos <a href="midia-video/meu-video.mp4">baixe aqui.</a></p>
+    </video>
+    <h1>Adicionando vídeos de serviços de vídeos</h1>
+    <h2>Do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NS8DsXzU2Xg?si=4oHdzGHR3DLGemQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    
+</body>
+</html>
